@@ -42,7 +42,7 @@ export default ({ exercises }) =>
             )}
 
             </List>
-
+<hr></hr>
             </Fragment>
               )}
       </Paper>
@@ -50,11 +50,11 @@ export default ({ exercises }) =>
     <Grid item sm>
       <Paper style={styles.Paper}>
         <Typography
-          variant='h5'>
+          variant='subheader'>
           Welcome to Blesst Chest
         </Typography>
         <Typography
-          variant='h3'>
+          variant='h4'>
           Please select a music
         </Typography>
       </Paper>

@@ -7,7 +7,8 @@ import { muscles, exercises} from './Store'
 
 class App extends React.Component{
   state = {
-    exercises
+    exercises,
+    category: 'chest'
   }
 
   getExercisesByMuscles() {
@@ -24,9 +25,17 @@ class App extends React.Component{
     )
   }
 
+  handleCategorySelected = category => {
+    this.setState({
+      category
+    })
+  }
+
 
 render(){
-  const exercises = this.getExercisesByMuscles()
+  const exercises = this.getExercisesByMuscles(),
+  { category, exercise } = this.state
+
   return (
     <div className="App">
       <Header/>
@@ -36,7 +45,9 @@ render(){
       />
 
       <Footer
+        category = {category}
         muscles={muscles}
+        onSelect = {this.handleCategorySelected}
           />
     </div>
   );

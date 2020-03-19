@@ -3,13 +3,17 @@ import { Tabs, Paper } from '@material-ui/core';
 import Tab from '@material-ui/core/Tab';
 
 
-const Footer = ({ muscles}) => {
+const Footer = ({ muscles, onSelect, category }) => {
+
+  const index = category
+    ? muscles.findIndex(group => group === category) + 1
+    : 0
   return(
 
     <div>
     <Paper square>
   <Tabs
-    value={0}
+    value={index}
     indicatorColor="primary"
     textColor="primary"
     aria-label="disabled tabs example"
