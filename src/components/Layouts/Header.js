@@ -11,12 +11,12 @@ const Header = () => {
     <Toolbar>
 
       <Typography variant="h3" color='inherit' align='right'>
-        Blesst Chest
+        IBCDB
       </Typography>
 
 
 
-      <Button color="inherit">Login</Button>
+      <Button color="inherit">Internet Blesst Chest Database</Button>
 
     </Toolbar>
   </AppBar>

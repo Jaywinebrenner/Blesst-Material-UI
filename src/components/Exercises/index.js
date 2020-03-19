@@ -22,7 +22,11 @@ export default ({
   exercises,
   category,
   onSelect,
-
+  exercise: {
+    id,
+    title = 'Welcome to Blesst Chest',
+    description = 'Please select a music on left'
+  }
 }) =>
 
   <Grid container>
@@ -50,6 +54,7 @@ export default ({
                   </List>
                 </Fragment>
               : null
+          
           )}
         </Paper>
     </Grid>
@@ -57,11 +62,11 @@ export default ({
       <Paper style={styles.Paper}>
         <Typography
           variant='subheader'>
-          Welcome to Blesst Chest
+          {title}
         </Typography>
         <Typography
           variant='h4'>
-          Please select a music
+          {description}
         </Typography>
       </Paper>
     </Grid>

@@ -7,7 +7,8 @@ import { muscles, exercises} from './Store'
 
 class App extends React.Component{
   state = {
-    exercises
+    exercises,
+    exercise: {}
 
   }
 
@@ -31,6 +32,12 @@ class App extends React.Component{
     })
   }
 
+  handleExerciseSelected = id => {
+    this.setState(({ exercises }) => ({
+      exercise: exercises.find(ex => ex.id === id)
+    }))
+  }
+
 
 render(){
   const exercises = this.getExercisesByMuscles(),
@@ -41,8 +48,10 @@ render(){
       <Header/>
 
     <Exercises
+      exercise={exercise}
       category={category}
       exercises = {exercises}
+      onSelect = {this.handleExerciseSelected}
       />
 
       <Footer
