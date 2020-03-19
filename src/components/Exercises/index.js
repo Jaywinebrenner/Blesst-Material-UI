@@ -5,10 +5,6 @@ import { Grid, Paper, AppBar, Button, Toolbar, Typography, List, ListItem, ListI
 import InboxIcon from '@material-ui/icons/Inbox';
 import DraftsIcon from '@material-ui/icons/Drafts';
 
-
-
-
-
 const styles = {
   Paper: {
     padding: 20,
@@ -17,35 +13,45 @@ const styles = {
     marginBottom: 10,
     marginLeft: 5,
     marginRight: 5,
+    height: 500,
+    overflowY: 'auto'
   }
 }
 
-export default ({ exercises }) =>
+export default ({
+  exercises,
+  category,
+  onSelect,
+
+}) =>
 
   <Grid container>
     <Grid item sm>
       <Paper style={styles.Paper}>
-        {exercises.map(([group, exercises]) =>
-          <Fragment>
-            <Typography
-              variant="headline"
-              style={{ textTransform: 'capitalize' }}
-            >
-              {group}
-            </Typography>
-
-            <List component="ul">
-              {exercises.map(({ title }) =>
-              <ListItem button component='a' href='#simple-list'>
-                <ListItemText primary={title} />
-              </ListItem>
-            )}
-
-            </List>
-<hr></hr>
-            </Fragment>
-              )}
-      </Paper>
+          {exercises.map(([group, exercises]) =>
+            !category || category === group
+              ? <Fragment key={group}>
+                  <Typography
+                    variant="headline"
+                    style={{ textTransform: 'capitalize' }}
+                  >
+                    {group}
+                  </Typography>
+                  <List component="ul">
+                    {exercises.map(({ id, title }) =>
+                      <ListItem
+                        key={id}
+                        button
+                        onClick={() => onSelect(id)}
+                      >
+                        <ListItemText primary={title} />
+                      </ListItem>
+                    )}
+                  </List>
+                </Fragment>
+              : null
+          )}
+        </Paper>
     </Grid>
     <Grid item sm>
       <Paper style={styles.Paper}>

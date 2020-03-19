@@ -41,6 +41,7 @@ render(){
       <Header/>
 
     <Exercises
+      category={category}
       exercises = {exercises}
       />
 
