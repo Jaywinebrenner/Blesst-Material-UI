@@ -25,6 +25,7 @@ export default ({
   exercise: {
     id,
     title = 'Welcome to Blesst Chest',
+    url = '',
     description = 'Please select a music on left'
   }
 }) =>
@@ -54,7 +55,7 @@ export default ({
                   </List>
                 </Fragment>
               : null
-          
+
           )}
         </Paper>
     </Grid>
@@ -63,6 +64,10 @@ export default ({
         <Typography
           variant='subheader'>
           {title}
+        </Typography>
+        <Typography
+          variant='h4'>
+          {url}
         </Typography>
         <Typography
           variant='h4'>

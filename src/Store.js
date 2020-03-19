@@ -2,50 +2,92 @@
 
 
 export const muscles = [
-  'shoulders', 'chest', 'arms', 'legs', 'back', 'stomach'
+  'Videos', 'Albums', 'Bench Press'
 ]
 
 
 export const exercises = [
   {
-    id: 'overhead-press',
-    title: 'Overhead Press',
-    description: 'Delts exercise...',
-    muscles: 'Shoulders'
+    id: 'That\'s it',
+    title: 'That\'s it',
+    url: 'Fart',
+    description: '34 Second video for the song \"That\'s it" by Blesst Chest off their 2nd full length LP \"Casual Corner\" on XRAY Records. Available via band camp. Just \"Bing!\" it.',
+    muscles: 'Videos',
   },
   {
-    id: 'dips',
-    title: 'Dips',
+    id: 'Def Gary',
+    title: 'Def Gary',
+    url: '',
     description: 'Triceps exercise...',
-    muscles: 'Arms'
+    muscles: 'Videos'
   },
   {
-    id: 'barbell-curls',
-    title: 'Barbell Curls',
+    id: '/Dojo',
+    title: '/Dojo',
+    url: '',
     description: 'Biceps exercise...',
-    muscles: 'Arms'
+    muscles: 'Videos'
   },
   {
-    'id': 'bench-press',
-    title: 'Bench Press',
+    id: 'Sebedad',
+    title: 'Sebedad',
+    url: '',
     description: 'Chest exercise...',
-    muscles: 'Chest'
+    muscles: 'Videos'
   },
   {
-    id: 'pull-ups',
-    title: 'Pull Ups',
+    id: 'T-Boned in the Daewoo',
+    title: 'T-Boned in the Daewoo',
+    url: '',
     description: 'Back and biceps exercise...',
-    muscles: 'Throat'
+    muscles: 'Videos'
   },
   {
-    id: 'deadlifts',
-    title: 'Deadlifts',
-    description: 'Back and leg exercise...',
-    muscles: 'Blesst'
+    id: 'Live',
+    title: 'Live at Turn Turn Turn',
+    url: '',
+    description: 'Live at Turn Turn Turn in Portland, Oregon',
+    muscles: 'Videos'
+  },
+  {
+    id: 'wwwt',
+    title: 'Wish We Were There',
+    url: '',
+    description: 'Legs exercise...',
+    muscles: 'Albums'
   },
   {
     id: 'squats',
     title: 'Squats',
+    url: '',
+    description: 'Legs exercise...',
+    muscles: 'Albums'
+  },
+  {
+    id: 'squats',
+    title: 'Squats',
+    url: '',
+    description: 'Legs exercise...',
+    muscles: 'Legs'
+  },
+  {
+    id: 'squats',
+    title: 'Squats',
+    url: '',
+    description: 'Legs exercise...',
+    muscles: 'Legs'
+  },
+  {
+    id: 'squats',
+    title: 'Squats',
+    url: '',
+    description: 'Legs exercise...',
+    muscles: 'Legs'
+  },
+  {
+    id: 'squats',
+    title: 'Squats',
+    url: '',
     description: 'Legs exercise...',
     muscles: 'Legs'
   },
