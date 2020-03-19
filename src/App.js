@@ -7,8 +7,8 @@ import { muscles, exercises} from './Store'
 
 class App extends React.Component{
   state = {
-    exercises,
-    category: 'chest'
+    exercises
+
   }
 
   getExercisesByMuscles() {
