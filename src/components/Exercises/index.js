@@ -1,6 +1,7 @@
 
 import React, { Fragment } from 'react'
 import { Grid, Paper, AppBar, Button, Toolbar, Typography, List, ListItem, ListItemIcon, ListItemText, Divider} from '@material-ui/core';
+import ReactPlayer from 'react-player'
 
 import InboxIcon from '@material-ui/icons/Inbox';
 import DraftsIcon from '@material-ui/icons/Drafts';
@@ -25,8 +26,9 @@ export default ({
   exercise: {
     id,
     title = 'Welcome to Blesst Chest',
+    description = 'Please select a music on left',
     url = '',
-    description = 'Please select a music on left'
+    img = 'http://xrayrecords.org/img/b-chest-new.jpg'
   }
 }) =>
 
@@ -62,17 +64,17 @@ export default ({
     <Grid item sm>
       <Paper style={styles.Paper}>
         <Typography
-          variant='subheader'>
+          variant='h4'>
           {title}
         </Typography>
+
         <Typography
-          variant='h4'>
-          {url}
-        </Typography>
-        <Typography
-          variant='h4'>
+          variant='subheader'>
           {description}
         </Typography>
+        <br></br>
+<img src={img} alt="boohoo" className="img"/>
+        <ReactPlayer url={url}playing />
       </Paper>
     </Grid>
   </Grid>

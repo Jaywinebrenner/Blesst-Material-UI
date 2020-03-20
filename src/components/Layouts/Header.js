@@ -11,7 +11,7 @@ const Header = () => {
     <Toolbar>
 
       <Typography variant="h3" color='inherit' align='right'>
-        IBCDB
+        Blesst Chest
       </Typography>
 
 

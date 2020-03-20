@@ -46,7 +46,7 @@ render(){
   return (
     <div className="App">
       <Header/>
-
+    console.log(url)
     <Exercises
       exercise={exercise}
       category={category}

@@ -7,62 +7,67 @@ export const muscles = [
 
 
 export const exercises = [
+
+  {
+    id: 'wwwt',
+    title: 'Wish We Were There',
+    url: '',
+    img: 'https://f4.bcbits.com/img/a2361328960_16.jpg',
+    description: '1. Song2. Song',
+    muscles: 'Albums'
+  },
+  {
+    id: 'Casual Corner',
+    title: 'Casual Corner',
+    url: '',
+    img: 'https://f4.bcbits.com/img/a2822890915_10.jpg',
+    description: 'Legs exercise...',
+    muscles: 'Albums'
+  },
   {
     id: 'That\'s it',
     title: 'That\'s it',
-    url: 'Fart',
-    description: '34 Second video for the song \"That\'s it" by Blesst Chest off their 2nd full length LP \"Casual Corner\" on XRAY Records. Available via band camp. Just \"Bing!\" it.',
+    url: 'https://www.youtube.com/watch?v=5iYpUpjeSss',
+    description: '',
     muscles: 'Videos',
+
   },
   {
     id: 'Def Gary',
     title: 'Def Gary',
-    url: '',
-    description: 'Triceps exercise...',
+    url: 'https://youtu.be/bp1rAxw3ys8',
+    description: '',
     muscles: 'Videos'
   },
   {
     id: '/Dojo',
     title: '/Dojo',
-    url: '',
-    description: 'Biceps exercise...',
+    url: 'https://youtu.be/lCYyPMfxiKs',
+    description: '',
     muscles: 'Videos'
   },
   {
     id: 'Sebedad',
     title: 'Sebedad',
-    url: '',
-    description: 'Chest exercise...',
+    url: 'https://youtu.be/1F2HzjJZVts',
+    description: '',
     muscles: 'Videos'
   },
   {
     id: 'T-Boned in the Daewoo',
     title: 'T-Boned in the Daewoo',
-    url: '',
-    description: 'Back and biceps exercise...',
+    url: 'https://www.youtube.com/watch?v=eBTWV848fW8',
+    description: '',
     muscles: 'Videos'
   },
   {
     id: 'Live',
-    title: 'Live at Turn Turn Turn',
-    url: '',
-    description: 'Live at Turn Turn Turn in Portland, Oregon',
+    title: 'Live at The Know',
+    url: 'https://www.youtube.com/watch?v=udT-ehrT8hc',
+    description: '',
     muscles: 'Videos'
   },
-  {
-    id: 'wwwt',
-    title: 'Wish We Were There',
-    url: '',
-    description: 'Legs exercise...',
-    muscles: 'Albums'
-  },
-  {
-    id: 'squats',
-    title: 'Squats',
-    url: '',
-    description: 'Legs exercise...',
-    muscles: 'Albums'
-  },
+
   {
     id: 'squats',
     title: 'Squats',
